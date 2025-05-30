@@ -8,13 +8,7 @@ import { api } from "../convex/_generated/api";
 export default function Home() {
   return (
     <>
-      <Authenticated>
-        <UserButton />
-        <h1 className="text-2xl font-bold">Welcome to Convex with Clerk!</h1>
-      </Authenticated>
-      <Unauthenticated>
-        <SignInButton />
-      </Unauthenticated>
+     Stuff
     </>
   );
 }

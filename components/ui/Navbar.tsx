@@ -33,18 +33,23 @@ async function Navbar({}: Props) {
     <html lang="en">
         <ClerkProvider dynamic>
           <ConvexClientProvider>
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
+            <NavigationMenu className="w-screen min-w-screen p-2 m-2">
+              <NavigationMenuList className="flex items-left">
+                <h1>The Silver Crown Store</h1>
+              </NavigationMenuList>
+            <NavigationMenuList className="flex items-center">
+                <NavigationMenuItem className="">
                   <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <NavigationMenuLink>Link</NavigationMenuLink>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+              </NavigationMenuList>
+            <NavigationMenuList>
                   <Authenticated>
                     <UserButton />
                   </Authenticated>
-                  <Unauthenticated>
+                  <Unauthenticated>S
                     <SignInButton />
                   </Unauthenticated>
               </NavigationMenuList>
